@@ -50,7 +50,7 @@ def main():
         season = sys.argv[1]
         which_season(season)
     else:
-        print("Usage: <program_name> <fall/winter/spring/summer>")
+        print("Usage: environment.py <season>")
 
 if __name__ == "__main__":
     main()
