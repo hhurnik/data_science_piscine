@@ -43,6 +43,7 @@ def which_season(season):
         temp_simulation(20, 30)
     else:
         print("Invalid season", file=sys.stderr)
+        sys.exit(1)
 
 
 def main():
@@ -50,7 +51,8 @@ def main():
         season = sys.argv[1]
         which_season(season)
     else:
-        print("Usage: environment.py <season>")
+        print("Usage: environment.py <season>", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

@@ -2,8 +2,8 @@ import sys
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: expert_system.py <min_temp> <max_temp>")
-        return
+        print("Usage: expert_system.py <min_temp> <max_temp>", file=sys.stderr)
+        sys.exit(1)
 
     min_temp = float(sys.argv[1])
     max_temp = float(sys.argv[2])
